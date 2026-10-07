@@ -76,9 +76,9 @@ export default function FisioterapiaADomicilioPage() {
       {/* 2. CUIDAMOS DE TI DONDE ESTÉS + QUÉ TRATAMOS - Fondo blanco con foto real */}
       <section className="py-16 lg:py-20 border-t border-zinc-200">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Contenido explicativo */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#111111]">
                 Cuidamos de ti donde estés con la misma calidad de consulta
               </h2>
@@ -111,8 +111,8 @@ export default function FisioterapiaADomicilioPage() {
             </div>
 
             {/* Foto real enriquecida */}
-            <div className="lg:col-span-5">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
                 <img
                   src="/MiembroSesionADomicilio.webp"
                   alt="Fisioterapeuta de Fénix Fisioterapia realizando sesión a domicilio"
@@ -129,10 +129,10 @@ export default function FisioterapiaADomicilioPage() {
       <section className="bg-[#C61E49] text-white py-16 lg:py-20 border-y border-[#A5153A]">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
           {/* Bloque superior con foto y metodología */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Foto grande a la izquierda */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <img
                   src="/AndreaCaminero-ValoracionADomicilio.webp"
                   alt="Valoración profesional a domicilio en Valladolid con Andrea Caminero"
@@ -143,7 +143,7 @@ export default function FisioterapiaADomicilioPage() {
             </div>
 
             {/* Contenido cómo trabajamos */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white leading-tight">
                 Cómo trabajamos en tu domicilio
               </h2>

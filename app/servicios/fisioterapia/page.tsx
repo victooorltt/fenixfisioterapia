@@ -99,9 +99,9 @@ export default function FisioterapiaGeneralPage() {
       {/* 2. PRESENTACIÓN Y QUÉ TRATAMOS - Fondo blanco con foto real y tarjetas */}
       <section className="py-16 lg:py-20 border-t border-zinc-200">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Texto introductorio */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#111111]">
                 Fisioterapia personalizada para tu recuperación y bienestar
               </h2>
@@ -134,8 +134,8 @@ export default function FisioterapiaGeneralPage() {
             </div>
 
             {/* Foto real enriquecida */}
-            <div className="lg:col-span-5">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
                 <img
                   src="/AndreaCamineroConPacientev2.webp"
                   alt="Tratamiento personalizado en Fénix Fisioterapia"
@@ -151,10 +151,10 @@ export default function FisioterapiaGeneralPage() {
       {/* 3. SECCIÓN OBLIGATORIA CON FONDO DEL COLOR DE ACENTO: NUESTRO MÉTODO */}
       <section className="bg-[#C61E49] text-white py-16 lg:py-20 border-y border-[#A5153A]">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Foto grande a la izquierda */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <img
                   src="/ClinicaGimnasioDesdeDentro.webp"
                   alt="Instalaciones de tratamiento y método activo Fénix"
@@ -165,7 +165,7 @@ export default function FisioterapiaGeneralPage() {
             </div>
 
             {/* Contenido técnico/clave del método */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white leading-tight">
                 Nuestro método de trabajo
               </h2>
@@ -213,9 +213,9 @@ export default function FisioterapiaGeneralPage() {
       {/* 4. BENEFICIOS - Fondo neutro con foto de apoyo */}
       <section className="py-16 lg:py-20 border-t border-zinc-200 bg-zinc-50/50">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Beneficios */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#111111]">
                 Beneficios de la fisioterapia en Fénix
               </h2>
@@ -237,8 +237,8 @@ export default function FisioterapiaGeneralPage() {
             </div>
 
             {/* Foto de apoyo */}
-            <div className="lg:col-span-5">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
                 <img
                   src="/JuanFernandezConPacienteEnCinta.jpg"
                   alt="Readaptación funcional con fisioterapeuta en Fénix Fisioterapia"
@@ -263,7 +263,7 @@ export default function FisioterapiaGeneralPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-4">
             {FISIOTERAPIA_FAQS.map((faq) => (
               <details
                 key={faq.q}

@@ -92,9 +92,9 @@ export default function PacienteOncologicoPage() {
       {/* 2. VALORACIÓN INICIAL - Fondo blanco con foto real y tarjeta de precio */}
       <section className="py-16 lg:py-20 border-t border-zinc-200">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Contenido izquierdo */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#111111]">
                 VALORACIÓN INICIAL DEL PACIENTE ONCOLÓGICO
               </h2>
@@ -125,8 +125,8 @@ export default function PacienteOncologicoPage() {
             </div>
 
             {/* Foto real enriquecida */}
-            <div className="lg:col-span-5">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
                 <img
                   src="/AndreaCamineroConPacientev2.webp"
                   alt="Valoración clínica en Fénix Fisioterapia"
@@ -142,7 +142,7 @@ export default function PacienteOncologicoPage() {
             <h3 className="text-xl font-semibold text-[#111111] mb-6">
               Preguntas frecuentes sobre la valoración
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-4">
               {VALORACION_FAQS.map((faq) => (
                 <details
                   key={faq.q}
@@ -165,10 +165,10 @@ export default function PacienteOncologicoPage() {
       {/* 3. SECCIÓN OBLIGATORIA CON FONDO DEL COLOR DE ACENTO: EJERCICIO ONCOLÓGICO */}
       <section className="bg-[#C61E49] text-white py-16 lg:py-20 border-y border-[#A5153A]">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Foto grande a la izquierda */}
-            <div className="lg:col-span-5 order-2 lg:order-1">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+            <div className="lg:col-span-6 order-2 lg:order-1 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <img
                   src="/FotoMiembroConPacienteHaciendoSentadilla.jpg"
                   alt="Ejercicio terapéutico adaptado para paciente oncológico"
@@ -179,7 +179,7 @@ export default function PacienteOncologicoPage() {
             </div>
 
             {/* Contenido técnico/clave a la derecha */}
-            <div className="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <div className="lg:col-span-6 order-1 lg:order-2 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-white leading-tight">
                 EJERCICIO EN PACIENTES ONCOLÓGICOS
               </h2>
@@ -233,7 +233,7 @@ export default function PacienteOncologicoPage() {
             <h3 className="text-xl font-semibold text-white mb-6">
               Preguntas sobre el entrenamiento
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-4">
               {EJERCICIO_FAQS.map((faq) => (
                 <div
                   key={faq.q}
@@ -253,9 +253,9 @@ export default function PacienteOncologicoPage() {
       {/* 4. TRATAMIENTO DEL LINFEDEMA - Fondo blanco / neutro */}
       <section className="py-16 lg:py-20 border-t border-zinc-200 bg-zinc-50/50">
         <div className="max-w-6xl mx-auto px-6 space-y-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
             {/* Texto y abordaje */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-[#111111]">
                 LINFEDEMA - TRATAMIENTO DEL LINFEDEMA
               </h2>
@@ -293,8 +293,8 @@ export default function PacienteOncologicoPage() {
             </div>
 
             {/* Foto de apoyo */}
-            <div className="lg:col-span-5">
-              <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
+            <div className="lg:col-span-6 flex flex-col">
+              <div className="relative w-full flex-1 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto min-h-[360px] sm:min-h-[420px] lg:min-h-[480px] rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80">
                 <img
                   src="/Dermatofuncional.webp"
                   alt="Tratamiento de linfedema y cuidado de la piel en Fénix Fisioterapia"
@@ -310,7 +310,7 @@ export default function PacienteOncologicoPage() {
             <h3 className="text-xl font-semibold text-[#111111] mb-6">
               Preguntas frecuentes sobre el linfedema
             </h3>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {LINFEDEMA_FAQS.map((faq) => (
                 <details
                   key={faq.q}
